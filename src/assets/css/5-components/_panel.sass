@@ -1,0 +1,197 @@
+.panel-container
+    position: relative
+    max-width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    margin-left: 160px
+    padding-left: 30px
+    // padding-right: 30px
+
+.panel-content
+    position: absolute
+    top: 18vh
+    max-width: 1000px
+    padding: 100px 20px 60px 20px
+    margin-right: 30px
+    background-color: $card-bg
+    border: 3px solid white
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    display: none
+
+    // &.panel-1
+    //     background-color: red
+
+    &.panel-2
+        padding: 0 0 !important
+    
+    &.active
+        display: block
+
+.panel-icon
+    position: absolute
+    z-index: 1
+    left: -30px
+    top: -30px
+    display: none
+    width: 100px
+    height: 100px
+    background-color: $button-bg
+    border: 3px solid white
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    transition: transform 0.3s linear,  box-shadow 0.3s linear
+
+    &.active
+        display: block
+
+    .panel-svg
+        position: absolute
+        margin: 0
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        fill: $text_icons
+        width: 60px
+        height: 60px
+
+.about-text
+    text-align: justify
+    padding: 0px 35px
+    font-size: 18px
+
+.title-container
+        position: absolute
+        display: none
+        text-align: right
+        right: -30px
+        bottom: -30px
+        width: 300px
+        // height: 60px
+        background-color: $primary-color
+        box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+        z-index: 1
+
+        &.active
+            display: block
+
+        .title-text
+            font-size: 20px
+            text-transform: uppercase
+            font-weight: 700
+            letter-spacing: 8px
+            padding: 15px 20px 
+            color: $accent-color
+
+.work-arrow-wrap
+    position: relative
+    display: flex
+    padding: 0 10px
+    cursor: pointer
+    // height: 450px
+    align-items: center
+
+    &-left
+        float: left
+        
+    &-right
+        float: right
+
+$carousel-width: 700px
+
+.work-wrap 
+  position: relative
+  width: $carousel-width
+  height: 400px
+  width: 780px
+  margin: 0 10px
+  display: flex
+
+.work-window 
+  overflow-y: visible
+  overflow-x: hidden
+  position: relative
+  top: -80px
+  background: none
+  margin: 0 20px
+  height: 620px
+
+#work-carousel
+    width: 10000px
+    height: 400px
+
+.work-slide
+    position: relative
+    width: 590px
+    height: 400px
+    float: left
+    display: flex
+    flex-direction: row
+    margin: 0 50px
+    // border: 1px solid red
+   
+.work-slide#slide1
+    background: none
+    display: flex
+    justify-content: center
+    
+.work-slide#slide2 
+    background: none
+    display: flex
+    justify-content: center
+
+.work-slide#slide3  
+    background: #9CE462
+
+.work-slide#slide4 
+    background: #FF6B6B
+
+.work-slide#slide5 
+    background: #C44D33 
+
+.work-img
+    position: absolute
+    filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.6))
+
+    &.desktop
+        top: -60px
+        max-width: 700px
+                
+    &.mobile
+        max-width: 150px
+        top: 150px
+        left: 100px
+
+.work-text-wrap
+    position: relative
+    top: 350px
+    left: 120px
+    // border: 1px solid
+    width: 260px
+    height: 100px
+    text-align: right
+
+    b
+        font-size: 22px
+
+    
+#prev, #next 
+  cursor: pointer
+  position: absolute
+  z-index: 1
+  width: 20px
+  align-self: center
+
+#prev
+    left: 0 
+
+#next
+    right: 0 
+
+.transition
+    transition: .7s
+        
+
+.svg_logo
+    fill: $primary-color
+    width: 140px
+    height: 130px

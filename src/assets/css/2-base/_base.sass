@@ -1,0 +1,45 @@
+*
+    margin: 0
+    padding: 0
+    //outline: 1px solid red
+    box-sizing: border-box
+
+    &:after, &:before
+        margin: 0
+        padding: 0
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+
+html::before
+//   @include bg_full
+  //@include bg_section
+
+body
+    position: relative
+    background-image: url('../../assets/img/background.jpg')
+    background-position: center
+    background-size: 110% 110%
+    background-repeat: no-repeat
+    height: 1000px
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+
+    a
+        text-decoration: none
+        color: $text_icons
+        outline: 0
+        
+        &:hover
+            color: $text_icons
+            text-decoration: none
+     
+
+.hide
+    display: none
+
+.mark
+    border: 1px solid #1dde2c
+    background-color: transparent !important
+

@@ -1,0 +1,31 @@
+.form-container
+    background-color: transparent
+    //background: #fff !important
+    padding: 60px 0 50px 0
+    text-align: center
+
+.form-group
+    max-width: $form-width
+    margin: 0 auto
+
+    input, textarea
+        font-weight: $font-weight-light
+        font-size: $font-size-normal
+        color: $text_icons
+        margin-bottom: 10px
+        height: 40px
+        border: none
+        border-radius: 0
+        box-shadow: none
+        background: none
+        border-bottom: 3px solid $text_icons
+        transition: border-bottom 0.4s ease
+
+        &:focus,
+        &:active
+            outline: none
+            border-bottom: 5px solid $text_icons
+            box-shadow: none
+
+        &::placeholder
+            color: white
