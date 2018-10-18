@@ -33,6 +33,17 @@ $( document ).ready(function() {
       });
     });
   });
+
+// Sequence JS
+
+  var sequenceElement = document.getElementById("sequence");
+
+  var options = {
+    keyNavigation: true,
+    animateCanvas: false
+  }
+  
+  var mySequence = sequence(sequenceElement, options);
  
 
 // Background move on mouse over

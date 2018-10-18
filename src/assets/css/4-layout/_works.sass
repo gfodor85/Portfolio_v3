@@ -1,0 +1,121 @@
+.seq-canvas
+    height: 100%
+    width: 100%
+    margin: 0
+    padding: 0
+    list-style: none
+    > *
+        height: 100%
+        width: 100%
+        margin: 0
+        padding: 0
+        list-style: none
+
+.seq
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden
+
+.seq-canvas > *
+    position: absolute
+
+.nav
+    position: absolute
+    z-index: 100
+    left: 0
+    right: 0
+    bottom: 2vh
+    width: 100%
+    border: none
+    margin: 0 auto
+    padding: 0
+    text-align: right
+
+.seq-next, .seq-prev
+    padding: 0
+    background: transparent
+    border: none
+    padding: .75em
+    cursor: pointer
+    color: #fff
+    font-size: 50px
+    line-height: 1
+    text-transform: uppercase
+    opacity: .8
+    -webkit-transition-duration: .25s
+    transition-duration: .25s
+    -webkit-transition-property: opacity
+    transition-property: opacity
+
+.seq-next:hover, .seq-prev:hover
+    opacity: 1
+
+.slide .desktop
+    position: absolute
+    bottom: -22vh
+    left: 0
+    // height: 130vh
+
+.seq
+
+    .seq-in .desktop
+        opacity: 1
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+        -webkit-transition: all .7s
+        transition: all .7s
+
+    .desktop, .seq-out
+        -webkit-transform: translate3d(0, 100px, 0)
+        transform: translate3d(0, 100px, 0)
+        opacity: 0
+        -webkit-transition: all .7s
+        transition: all .7s
+
+.slide .mobile
+    position: absolute
+    bottom: -22vh
+    left: 0
+    // height: 130vh
+
+.seq
+
+    .seq-in .mobile
+        opacity: 1
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+        -webkit-transition: all .7s
+        transition: all .7s
+
+    .mobile, .seq-out
+        -webkit-transform: translate3d(0, 100px, 0)
+        transform: translate3d(0, 100px, 0)
+        opacity: 0
+        -webkit-transition: all .7s
+        transition: all .7s
+
+.slide__title
+    float: right
+    color: #FFF
+    font-size: 200px
+    line-height: 0.8
+    text-transform: uppercase
+    -webkit-transform: translate3d(0, -60px, 0)
+    transform: translate3d(0, -60px, 0)
+    opacity: 0
+    text-align: right
+    margin-right: 60px
+    margin-top: 60px
+    font-weight: 900
+    -webkit-transition: all .4s
+    transition: all .4s
+
+.seq .seq-in .slide__title
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    opacity: 0.3
+    -webkit-transition: all .4s
+    transition: all .4s
+    -webkit-transition-delay: .2s
+    transition-delay: .2s
