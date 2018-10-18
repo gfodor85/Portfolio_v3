@@ -1,3 +1,13 @@
+$carousel-width: 700px
+
+.work-wrap
+    position: relative
+    width: $carousel-width
+    height: 400px
+    width: 780px
+    margin: 0 10px
+    display: flex
+
 .seq-canvas
     height: 100%
     width: 100%
@@ -23,22 +33,22 @@
 .nav
     position: absolute
     z-index: 100
-    left: 0
-    right: 0
-    bottom: 2vh
-    width: 100%
+    right: -45px
+    width: 70px
+    align-self: center
     border: none
     margin: 0 auto
     padding: 0
-    text-align: right
+    background-color: $primary-color
+    box-shadow: $shadow
 
 .seq-next, .seq-prev
-    padding: 0
     background: transparent
     border: none
-    padding: .75em
+    padding: 20px
+    margin: 0 auto
     cursor: pointer
-    color: #fff
+    color: $accent-color
     font-size: 50px
     line-height: 1
     text-transform: uppercase
@@ -51,11 +61,22 @@
 .seq-next:hover, .seq-prev:hover
     opacity: 1
 
-.slide .desktop
+.slide 
     position: absolute
-    bottom: -22vh
-    left: 0
-    // height: 130vh
+    border: 2px solid #fff
+
+.desktop, .mobile
+    position: relative
+    filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.6))
+
+.desktop
+    max-width: 700px
+    top: -100px
+
+.mobile
+    max-width: 150px
+    top: 100px
+    left: 100px
 
 .seq
 
@@ -67,17 +88,13 @@
         transition: all .7s
 
     .desktop, .seq-out
-        -webkit-transform: translate3d(0, 100px, 0)
-        transform: translate3d(0, 100px, 0)
+        -webkit-transform: translate3d(0, -200px, 0)
+        transform: translate3d(0, -100px, 0)
         opacity: 0
         -webkit-transition: all .7s
         transition: all .7s
 
-.slide .mobile
-    position: absolute
-    bottom: -22vh
-    left: 0
-    // height: 130vh
+
 
 .seq
 
@@ -94,6 +111,7 @@
         opacity: 0
         -webkit-transition: all .7s
         transition: all .7s
+
 
 .slide__title
     float: right
