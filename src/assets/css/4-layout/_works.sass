@@ -24,8 +24,8 @@ $carousel-width: 700px
 .seq
     position: relative
     width: 100%
-    height: 100vh
-    overflow: hidden
+    height: 700px
+    // overflow: hidden
 
 .seq-canvas > *
     position: absolute
@@ -53,9 +53,7 @@ $carousel-width: 700px
     line-height: 1
     text-transform: uppercase
     opacity: .8
-    -webkit-transition-duration: .25s
     transition-duration: .25s
-    -webkit-transition-property: opacity
     transition-property: opacity
 
 .seq-next:hover, .seq-prev:hover
@@ -63,53 +61,68 @@ $carousel-width: 700px
 
 .slide 
     position: absolute
-    border: 2px solid #fff
+    width: 100%
+    height: 500px
 
 .desktop, .mobile
-    position: relative
+    position: absolute
     filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.6))
 
 .desktop
     max-width: 700px
-    top: -100px
+    top: -150px
 
 .mobile
     max-width: 150px
     top: 100px
-    left: 100px
+    left: 150px
 
 .seq
 
     .seq-in .desktop
         opacity: 1
-        -webkit-transform: translate3d(0, 0, 0)
         transform: translate3d(0, 0, 0)
-        -webkit-transition: all .7s
         transition: all .7s
 
     .desktop, .seq-out
-        -webkit-transform: translate3d(0, -200px, 0)
         transform: translate3d(0, -100px, 0)
         opacity: 0
-        -webkit-transition: all .7s
         transition: all .7s
-
-
 
 .seq
 
     .seq-in .mobile
         opacity: 1
-        -webkit-transform: translate3d(0, 0, 0)
         transform: translate3d(0, 0, 0)
-        -webkit-transition: all .7s
         transition: all .7s
 
     .mobile, .seq-out
-        -webkit-transform: translate3d(0, 100px, 0)
         transform: translate3d(0, 100px, 0)
         opacity: 0
-        -webkit-transition: all .7s
+        transition: all .7s
+
+.work-text-wrap
+    position: absolute
+    top: 250px
+    right: 120px
+    // border: 1px solid
+    width: 260px
+    height: 100px
+    text-align: right
+
+    b
+        font-size: 22px
+
+.seq
+
+    .seq-in .work-text-wrap
+        opacity: 1
+        transform: translate3d(0, 0, 0)
+        transition: all .7s
+
+    .work-text-wrap, .seq-out
+        transform: translate3d(0, 0, 0)
+        opacity: 0
         transition: all .7s
 
 
@@ -119,21 +132,17 @@ $carousel-width: 700px
     font-size: 200px
     line-height: 0.8
     text-transform: uppercase
-    -webkit-transform: translate3d(0, -60px, 0)
     transform: translate3d(0, -60px, 0)
     opacity: 0
     text-align: right
     margin-right: 60px
     margin-top: 60px
     font-weight: 900
-    -webkit-transition: all .4s
     transition: all .4s
 
 .seq .seq-in .slide__title
-    -webkit-transform: translate3d(0, 0, 0)
     transform: translate3d(0, 0, 0)
     opacity: 0.3
-    -webkit-transition: all .4s
     transition: all .4s
-    -webkit-transition-delay: .2s
     transition-delay: .2s
+

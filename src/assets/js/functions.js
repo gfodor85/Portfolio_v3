@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  $('.left-panel').animate({left: '0px'}, 1500);
+  $('.nav-panel').animate({left: '0px'}, 1500);
   $('.panel panel-1').addClass('active');
 
   $('.nav-item').on('click', function(){
