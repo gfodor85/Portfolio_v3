@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 </head>
@@ -39,7 +41,7 @@
         </svg>
     </div>
 
-    <div class="nav-panel">
+    <div class="nav-panel nav-panel-animate">
         <div class="nav-item-container">
             <div panel-icon="panel-icon_1" panel-content="panel-content_1" title-container="title-container_1" class="nav-item nav-item_1">
                 <svg class="nav-icon">
@@ -103,16 +105,37 @@
                 <div id="sequence" class="seq">
                     <ul class="seq-canvas">
                         <li class="slide">
-                            <img class="desktop" src="assets/img/azulite_desktop_mockup.png">
-                            <img class="mobile" src="assets/img/azulite_mobile_mockup.png">
+                            <img class="desktop" src="assets/img/works/azulite_desktop_mockup.png">
+                            <img class="mobile" src="assets/img/works/azulite_mobile_mockup.png">
                             <p class="work-text-wrap"><b>Azulite</b><br />
                                 A simple and minimal landing page template
                             </p>
                         </li>
                         <li class="slide">
-                            <img class="work-img desktop" src="assets/img/barbero_desktop_mockup.png" />
-                            <img class="work-img mobile" src="assets/img/barbero_mobile_mockup.png" />
+                            <img class="work-img desktop" src="assets/img/works/verdina_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/verdina_mobile_mockup.png" />
+                            <p class="work-text-wrap"><b>Verdina</b><br />
+                                A simple and minimal landing page template
+                            </p>
+                        </li>
+                        <li class="slide">
+                            <img class="work-img desktop" src="assets/img/works/barbero_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/barbero_mobile_mockup.png" />
                             <p class="work-text-wrap"><b>Barbero</b><br />
+                                A simple and minimal landing page template
+                            </p>
+                        </li>
+                        <li class="slide">
+                            <img class="work-img desktop" src="assets/img/works/dentico_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/dentico_mobile_mockup.png" />
+                            <p class="work-text-wrap"><b>Dentico</b><br />
+                                A simple and minimal landing page template
+                            </p>
+                        </li>
+                        <li class="slide">
+                            <img class="work-img desktop" src="assets/img/works/yogic_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/yogic_mobile_mockup.png" />
+                            <p class="work-text-wrap"><b>Yogic</b><br />
                                 A simple and minimal landing page template
                             </p>
                         </li>
@@ -131,6 +154,72 @@
                     <use xlink:href="assets/img/svg/symbols.svg#skills_icon"></use>
                 </svg>
             </div>
+            <!-- MY SKILLS SECTION -->
+
+    <div class="skills-container">
+            
+            <div class="skills_modal">
+                <div class="skills_modal_inner">
+                    <svg class="gesture-swipe-left">
+                        <use xlink:href="assets/img/svg/symbols.svg#gesture-swipe-left"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/svg/symbols.svg#html5_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/svg/symbols.svg#css_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#sass_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#bootstrap_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#jquery_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#gulp_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#nodejs_logo"></use>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <svg class="skills_logo">
+                            <use xlink:href="assets/img/skills/symbols.svg#php_logo"></use>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        
+    </div>
             <div id="title-container_3" class="title-container">
                 <div class="title-text">My skills</div>
             </div>
@@ -165,6 +254,33 @@
 
     <!-- Sequence script -->
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/sequence.min.js'></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            mousewheelControl: false,
+            coverflow: {
+                rotate: 20,
+                stretch: -20,
+                depth: 250,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 
 
 </body>

@@ -1,0 +1,66 @@
+.skills-container
+    position: relative
+    color: $text_icons
+    //height: 350px
+    padding-top: 100px
+    padding-bottom: 100px
+
+    .skills_modal
+        position: absolute
+        display: flex
+        justify-content: center
+        width: 100%
+        z-index: 1000
+        padding-top: 40px
+
+        .skills_modal_inner
+            display: flex
+            flex-direction: row
+            justify-content: center
+            height: 250px
+            width: 250px
+            border-radius: 500px
+            transition: all 1s ease-out
+            //background-color: rgba(255, 255, 255, 0.8)
+
+            .gesture-swipe-left
+                display: flex
+                flex-direction: row
+                height: 180px
+                width: 180px
+                fill:  $light-primary-color
+                filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.7))
+                margin-top: 30px
+                //padding-bottom: 50px
+
+
+.skills_logo
+    width: 90%
+    height: 90%
+    fill: #fff
+    filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
+
+@media (max-width:960px)
+
+    .skills_logo
+        width: 80%
+        height: 80%
+        fill: #fff
+        filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
+
+//@media (max-width: 960px)
+
+    .skills_title_container
+        position: absolute
+        top: 200px
+        width: 200px
+
+        .skills_title
+                position: absolute
+                left: -135px
+                font-family: 'Muli'
+                font-size: 20px !important
+                text-transform: uppercase
+                transform: rotate(270deg)
+
+

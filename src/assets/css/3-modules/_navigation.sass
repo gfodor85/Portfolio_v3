@@ -1,38 +1,27 @@
 .nav-panel
     position: absolute
-    transform: translateX(-100px)
     display: flex
-    width: 100px
     height: 100%
     z-index: 1000
-    animation: bounceInRight 0.8s linear
-    transition: animation
+    animation: bounceIn 1.5s
     animation-iteration-count: 1
     animation-fill-mode: forwards
 
-    @keyframes bounceInRight
-        0%
-            transform: translateX(-100px)
+    &-animate
+        animation-timing-function: cubic-bezier(0.5,2,0.5,0.75)
 
-        25%
-            transform: translateX(-85px)
-
-        40%
-            transform: translateX(-50px)
-
-        60%
-            transform: translateX(-25px)
-
-        100%
-            transform: translateX(0px)
-
-        
-
+    @keyframes bounceIn
+        from
+            left: -100px
+        to
+            left: -15px
+     
     .nav-item-container
         display: flex
         flex-direction: column
         justify-content: space-between
         align-self: center
+        width: 80px
         height: 380px
         padding: 15px 0
         background-color: $side-bg
@@ -44,7 +33,7 @@
         
         .nav-item
             position: relative
-            right: -15px
+            right: -25px
             width: 70px
             min-height: 70px
             // margin: 2vh auto
