@@ -41,6 +41,7 @@
         </svg>
     </div>
 
+    <!-- NAVIGATION -->
     <div class="nav-panel nav-panel-animate">
         <div class="nav-item-container">
             <div panel-icon="panel-icon_1" panel-content="panel-content_1" title-container="title-container_1" class="nav-item nav-item_1">
@@ -70,6 +71,8 @@
     </div>
 
     <div class="panel-container">
+
+        <!-- ABOUT PANEL -->
         <div id="panel-content_1" class="panel-content panel-1">
             <div id="panel-icon_1" class="panel-icon panel-icon_1 active">
                 <svg class="panel-svg">
@@ -89,7 +92,8 @@
             </div>
         </div>
 
-        <div id="panel-content_2" class="panel-content panel-2">
+        <!-- WORK PANEL -->
+        <div id="panel-content_2" class="panel-content panel-works">
             <div id="panel-icon_2" class="panel-icon panel-icon_2">
                 <svg class="panel-svg">
                     <use xlink:href="assets/img/svg/symbols.svg#work_icon"></use>
@@ -148,86 +152,101 @@
             </div>
         </div>
 
-        <div id="panel-content_3" class="panel-content">
-            <div id="panel-icon_3" class="panel-icon panel-icon_2">
+    
+        <!-- MY SKILLS PANEL -->
+
+        <div id="panel-content_3" class="panel-content skills-panel ">
+
+            <div id="panel-icon_3" class="panel-icon">
                 <svg class="panel-svg">
                     <use xlink:href="assets/img/svg/symbols.svg#skills_icon"></use>
                 </svg>
             </div>
-            <!-- MY SKILLS SECTION -->
 
-    <div class="skills-container">
-            
-            <div class="skills_modal">
-                <div class="skills_modal_inner">
-                    <svg class="gesture-swipe-left">
-                        <use xlink:href="assets/img/svg/symbols.svg#gesture-swipe-left"></use>
-                    </svg>
+            <div class="skills-chart-wrapper">
+                <svg class="skills-chart-icon-wrapper_left">
+                    <use xlink:href="assets/img/skills/symbols.svg#html5_logo"></use>
+                </svg>
+                <div class="skills-chart-bar_left">
+                    <div class="skills-chart-text_left">HTML 5</div>
                 </div>
             </div>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/svg/symbols.svg#html5_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/svg/symbols.svg#css_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#sass_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#bootstrap_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#jquery_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#gulp_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#nodejs_logo"></use>
-                        </svg>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg class="skills_logo">
-                            <use xlink:href="assets/img/skills/symbols.svg#php_logo"></use>
-                        </svg>
-                    </div>
-
-                    
-                    <div class="swiper-pagination"></div>
+            <div class="skills-chart-wrapper">
+                <div class="skills-chart-bar_right">
+                    <div class="skills-chart-text_right">CSS 3</div>
                 </div>
+                <svg class="skills-chart-icon-wrapper_right">
+                    <use xlink:href="assets/img/skills/symbols.svg#css_logo"></use>
+                </svg>
                 
-
             </div>
-        
-        </div>
+
+            <div class="skills-chart-wrapper">
+                <svg class="skills-chart-icon-wrapper_left">
+                    <use xlink:href="assets/img/skills/symbols.svg#sass_logo"></use>
+                </svg>
+                <div class="skills-chart-bar_left">
+                    <div class="skills-chart-text_left">SASS</div>
+                </div>
+            </div>
+
+            <div class="skills-chart-wrapper">
+                <div class="skills-chart-bar_right">
+                    <div class="skills-chart-text_right">JQUERY</div>
+                </div>
+                <svg class="skills-chart-icon-wrapper_right">
+                    <use xlink:href="assets/img/skills/symbols.svg#jquery_logo"></use>
+                </svg>
+                
+            </div>
+
+            <div class="skills-chart-wrapper">
+                <svg class="skills-chart-icon-wrapper_left">
+                    <use xlink:href="assets/img/skills/symbols.svg#bootstrap_logo"></use>
+                </svg>
+                <div class="skills-chart-bar_left">
+                    <div class="skills-chart-text_left">BOOTSTRAP</div>
+                </div>
+            </div>
+
+            <div class="skills-chart-wrapper">
+                    <div class="skills-chart-bar_right">
+                        <div class="skills-chart-text_right">GULP</div>
+                    </div>
+                <svg class="skills-chart-icon-wrapper_right">
+                    <use xlink:href="assets/img/skills/symbols.svg#gulp_logo"></use>
+                </svg>
+                
+            </div>
+
+            <div class="skills-chart-wrapper">
+                <svg class="skills-chart-icon-wrapper_left">
+                    <use xlink:href="assets/img/skills/symbols.svg#nodejs_logo"></use>
+                </svg>
+                <div class="skills-chart-bar_left">
+                    <div class="skills-chart-text_left">NODE JS</div>
+                </div>
+            </div>
+
+            <div class="skills-chart-wrapper">
+                <div class="skills-chart-bar_right">
+                    <div class="skills-chart-text_right">PHP</div>
+                </div>
+                <svg class="skills-chart-icon-wrapper_right">
+                    <use xlink:href="assets/img/skills/symbols.svg#php_logo"></use>
+                </svg>
+                
+            </div>
+
+
             <div id="title-container_3" class="title-container">
                 <div class="title-text">My skills</div>
             </div>
         </div>
+                
+
+        <!-- CONTACT -->
 
         <div id="panel-content_4" class="panel-content">
             <div id="panel-icon_4" class="panel-icon panel-icon_4">
@@ -268,23 +287,10 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            mousewheelControl: false,
-            coverflow: {
-                rotate: 20,
-                stretch: -20,
-                depth: 250,
-                modifier: 1,
-                slideShadows: false,
-            },
             pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            el: '.swiper-pagination',
+            clickable: true,
             },
-            
         });
     </script>
 

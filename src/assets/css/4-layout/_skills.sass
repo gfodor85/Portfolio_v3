@@ -1,38 +1,15 @@
-.skills-container
-    position: relative
-    color: $text_icons
-    //height: 350px
-    padding-top: 100px
-    padding-bottom: 100px
-
-    .skills_modal
-        position: absolute
-        display: flex
-        justify-content: center
-        width: 100%
-        z-index: 1000
-        padding-top: 40px
-
-        .skills_modal_inner
-            display: flex
-            flex-direction: row
-            justify-content: center
-            height: 250px
-            width: 250px
-            border-radius: 500px
-            transition: all 1s ease-out
-            //background-color: rgba(255, 255, 255, 0.8)
-
-            .gesture-swipe-left
-                display: flex
-                flex-direction: row
-                height: 180px
-                width: 180px
-                fill:  $light-primary-color
-                filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.7))
-                margin-top: 30px
-                //padding-bottom: 50px
-
+.skills-panel
+    max-width: 700px !important
+    position: absolute
+    // top: 18vh
+    min-width: 700px
+    padding: 100px 20px 60px 20px
+    margin: 30px
+    background-color: $card-bg
+    border: 3px solid white
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    display: none
+    
 
 .skills_logo
     width: 90%
@@ -40,27 +17,80 @@
     fill: #fff
     filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
 
-@media (max-width:960px)
+.skills-chart-wrapper
+    display: flex
+    align-items: center
+    position: relative
+    width: 100%
+    
+.skills-chart-icon-wrapper_left
+    position: relative
+    left: -40px
+    width: 60px
+    height: 60px
+    display: block
+    float: left
+    background-color: $button-bg
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    color: $primary-color
+    margin: 2px 0
+    border: 2px solid white
+    padding: 5px 2px
+    z-index: 1000
 
-    .skills_logo
-        width: 80%
-        height: 80%
-        fill: #fff
-        filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.5))
+.skills-chart-bar_left
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    left: -45px
+    float: right
+    width: 150px
+    height: 25px
+    background-color: $primary-color
+    color: $primary-color
+    margin-left: 5px
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    padding-right: 15px 
 
-//@media (max-width: 960px)
+.skills-chart-text_left
+    font-weight: bold
+    color: $accent-color
+    text-align: right
 
-    .skills_title_container
-        position: absolute
-        top: 200px
-        width: 200px
+.skills-chart-icon-wrapper_right
+    position: relative
+    right: -40px
+    width: 60px
+    height: 60px
+    display: block
+    float: right
+    background-color: $button-bg
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    color: $primary-color
+    margin: 2px 0
+    border: 2px solid white
+    padding: 5px 2px
+    z-index: 1000
 
-        .skills_title
-                position: absolute
-                left: -135px
-                font-family: 'Muli'
-                font-size: 20px !important
-                text-transform: uppercase
-                transform: rotate(270deg)
+.skills-chart-bar_right
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    right: -45px
+    float: left
+    width: 150px
+    height: 25px
+    background-color: $primary-color
+    color: $primary-color
+    margin-left: 5px
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    padding-left: 15px 
+
+.skills-chart-text_right
+    font-weight: bold
+    color: $accent-color
+    text-align: left
 
 
