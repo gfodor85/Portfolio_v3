@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wait": "0.0.2",
+    "handlebars": "^4.0.11",
+    "run-sequence": "^2.2.0"
+  }
+}
