@@ -34,7 +34,22 @@ body
         &:hover
             color: $primary-color
             text-decoration: none
-     
+
+.logo
+    position: absolute
+    left: 10px
+    margin-top: 15px
+    // float: left
+
+    svg
+        display: block
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.8))
+        
+
+.svg_logo
+    fill: $primary-color
+    width: auto
+    height: 130px
 
 .hide
     display: none
@@ -43,3 +58,8 @@ body
     border: 1px solid #1dde2c
     background-color: transparent !important
 
+@media (max-width: 770px)
+
+    .logo svg
+        width: 60px
+        height: 60px
