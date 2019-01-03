@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   // $('.nav-panel').animate({left: '0px'}, 1000);
-  $('.panel, .panel-1').fadeIn(300, function(){
+  $('.panel, .panel-about').fadeIn(300, function(){
     $(this).addClass('active');
   });
 

@@ -1,8 +1,6 @@
-$carousel-width: 700px
-
 .work-wrap
     position: relative
-    width: $carousel-width
+    width: 700px
     height: 400px
     width: 780px
     margin: 0 10px
@@ -145,4 +143,33 @@ $carousel-width: 700px
     opacity: 0.3
     transition: all .4s
     transition-delay: .2s
+
+@media (max-width: 1025px)
+
+    .panel-works
+        max-width: 400px
+
+    .panel-content
+        min-width: 550px !important
+
+    .work-wrap
+        position: relative
+        width: 500px
+        height: 400px
+        width: 780px
+        margin: 0 10px
+        display: flex
+    
+    .desktop
+        max-width: 500px
+        top: -150px
+
+    .mobile
+        max-width: 150px
+        top: 100px
+        left: 150px
+
+
+    
+
 
