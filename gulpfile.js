@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
  
 
-// Delete the dist directory
+// Delete the DIST directory
 gulp.task('clean:dist', function () {
     return gulp.src([
         './dist/index.html',
@@ -21,6 +21,7 @@ gulp.task('clean:dist', function () {
         './dist/assets/fonts/font-awesome.min.css',
         './dist/assets/img/*.{png,jpg}',
         './dist/assets/img/svg/symbols.svg',
+        './dist/assets/img/skills/symbols.svg',
         './dist/assets/js/**/*.js',
         './dist/assets/php/**/*.*',
         './dist/**/*.json',
@@ -29,15 +30,16 @@ gulp.task('clean:dist', function () {
         .pipe(clean());
 });
 
-//Copy files to dist directory
+//Copy files to DIST directory
 gulp.task('copy', function () {
     return gulp.src([
         './src/index.html',
-        './src/contact.php',
         './src/assets/css/main.css',
         './src/assets/fonts/font-awesome.min.css',
         './src/assets/img/*.{png,jpg}',
         './src/assets/img/svg/symbols.svg',
+        './src/assets/img/skills/symbols.svg',
+        './src/assets/img/works/*.*',
         './src/assets/js/**/*.js',
         './src/assets/php/**/*.*',
         './src/*.json',
@@ -89,12 +91,18 @@ gulp.task('browsersync',['php'], function() {
 
 // Delete symbols.svg
 gulp.task('clean:symbols', function () {
-    return gulp.src('./src/assets/img/svg/symbols.svg')
+    return gulp.src([
+            './src/assets/img/svg/symbols.svg',
+            './src/assets/img/skills/symbols.svg'
+        ])
         .pipe(clean());
 });
 
 gulp.task('sprites', function () {
-    return gulp.src('src/assets/img/svg/*.svg')
+    return gulp.src([
+        'src/assets/img/svg/*.svg',
+        'src/assets/img/skills/*.svg'
+    ])
 
         .pipe(svgSprite({
             mode: 'symbols',
