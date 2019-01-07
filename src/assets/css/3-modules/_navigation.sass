@@ -1,9 +1,19 @@
-.nav-panel
-    position: absolute
+.nav-item-wrapper
+    position: fixed
     display: flex
-    height: 100%
-    padding-top: 85px
+    justify-content: space-between
+    flex-direction: row
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    max-width: 380px
+    height: 75px
+    padding: 0 10px 0 10px
     z-index: 1000
+    background-color: $side-bg
+    border-bottom: none !important
+    border: 3px solid white
+    box-shadow: $shadow-left
     animation: bounceIn 1.5s
     animation-iteration-count: 1
     animation-fill-mode: forwards
@@ -13,93 +23,80 @@
 
     @keyframes bounceIn
         from
-            left: -100px
+            bottom: -100px
         to
-            left: -15px
-     
-    .nav-item-container
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        align-self: center
-        width: 80px
-        height: 380px
-        padding: 15px 0
-        background-color: $side-bg
-        border-left: none !important
-        border: 3px solid white
-        box-shadow: $shadow-left
-        // margin: auto 0
-        // border: 1px solid white
-        
-        .nav-item
-            position: relative
-            right: -25px
-            width: 70px
-            min-height: 70px
-            // margin: 2vh auto
-            background-color: $button-bg
-            border: 3px solid white
-            cursor: pointer
-            box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
-            transition: transform 0.3s linear,  box-shadow 0.3s linear
-
-            &:hover
-                box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.6)
-                transform: scale(1.1)
-                transition: transform 0.3s linear,  box-shadow 0.3s linear   
-
-            .nav-icon
-                position: absolute
-                margin: 0
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
-                fill: $primary-color
-                width: 50px
-                height: 50px
+            bottom: -15px
 
 
+$nav-item-size: 65px
 
-@media (max-width: 770px)
+.nav-item
+    position: relative
+    top: -15px
+    width: $nav-item-size
+    height: $nav-item-size
+    margin: 0 6px 
+    background-color: $button-bg
+    border: 3px solid white
+    cursor: pointer
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+    transition: transform 0.3s linear,  box-shadow 0.3s linear
 
-    .nav-panel
-        position: fixed
-        display: flex
-        width: 100%
-        z-index: 1000
+    &:hover
+        box-shadow: 4px 4px 15px 4px rgba(0,0,0,0.6)
+        transform: scale(1.1)
+        transition: transform 0.3s linear,  box-shadow 0.3s linear   
 
-        @keyframes bounceIn
-            from
-                bottom: -100px
-            to
-                bottom: -15px
+    .nav-icon
+        position: absolute
+        margin: 0
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: $primary-color
+        width: 40px
+        height: 40px
 
-        .nav-item-container
-            display: flex
-            flex-direction: row
-            width: 380px
-            height: 80px
-            padding: 0 !important
-            align-self: flex-end
-            background-color: $side-bg
-            border: 3px solid white
-            border-left: 3px solid white !important
-            border-bottom: 0 
-            box-shadow: $shadow-left
+
+// @media (max-width: 770px)
+
+//     .nav-panel
+//         position: fixed
+//         display: flex
+//         width: 100%
+//         z-index: 1000
+
+//         @keyframes bounceIn
+//             from
+//                 bottom: -100px
+//             to
+//                 bottom: -15px
+
+//         .nav-item-container
+//             display: flex
+//             flex-direction: row
+//             width: 380px
+//             height: 80px
+//             padding: 0 !important
+//             align-self: flex-end
+//             background-color: $side-bg
+//             border: 3px solid white
+//             border-left: 3px solid white !important
+//             border-bottom: 0 
+//             box-shadow: $shadow-left
             
-            margin: 0 auto
-            // border: 1px solid white
+//             margin: 0 auto
+//             // border: 1px solid white
 
-            .nav-item
-                // position: relative
-                top: -20px
-                right: 0 !important
-                width: 70px
-                min-height: 70px
-                // margin: 2vh auto
-                background-color: $button-bg
-                border: 3px solid white
-                cursor: pointer
-                box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
-                transition: transform 0.3s linear,  box-shadow 0.3s linear
+//             .nav-item
+//                 // position: relative
+//                 top: -20px
+//                 right: 0 !important
+//                 width: 70px
+//                 min-height: 70px
+//                 // margin: 2vh auto
+//                 background-color: $button-bg
+//                 border: 3px solid white
+//                 cursor: pointer
+//                 box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
+//                 transition: transform 0.3s linear,  box-shadow 0.3s linear

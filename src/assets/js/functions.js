@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
-  // $('.nav-panel').animate({left: '0px'}, 1000);
-  $('.panel, .panel-about').fadeIn(300, function(){
+  // $('.nav-item-wrapper').animate({left: '0px'}, 1000);
+  $('.panel-about').fadeIn(300, function(){
     $(this).addClass('active');
   });
 
@@ -16,9 +16,9 @@ $( document ).ready(function() {
       });
     });
 
-    var toShow_content = $(this).attr('panel-content');
+    var toShow_content = $(this).attr('content-panel');
     
-    $('.panel-content.active').fadeOut(500, function(){
+    $('.content-panel.active').fadeOut(500, function(){
       $(this).removeClass('active');
       $('#' + toShow_content).fadeIn(500, function(){
         $(this).addClass('active');
