@@ -72,6 +72,7 @@ gulp.task('php', function() {
     });
 });
 
+
 gulp.task('browsersync',['php'], function() {
     browsersync.init({
         proxy: '127.0.0.1:8010',
@@ -102,7 +103,7 @@ gulp.task('sprites', function () {
     return gulp.src([
         'src/assets/img/svg/*.svg',
         'src/assets/img/skills/*.svg'
-    ])
+        ])
 
         .pipe(svgSprite({
             mode: 'symbols',
