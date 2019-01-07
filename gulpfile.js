@@ -61,7 +61,6 @@ gulp.task('clean:symbols', function () {
 gulp.task('sprites', function () {
     return gulp.src([
         'src/assets/img/svg/*.svg',
-        'src/assets/img/skills/*.svg'
         ])
 
         .pipe(svgSprite({
