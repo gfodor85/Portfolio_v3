@@ -34,6 +34,7 @@ gulp.task('php', function() {
     });
 });
 
+
 gulp.task('browsersync',['php'], function() {
     browsersync.init({
         proxy: '127.0.0.1:8010',
@@ -58,7 +59,14 @@ gulp.task('clean:symbols', function () {
 });
 
 gulp.task('sprites', function () {
+<<<<<<< HEAD
     return gulp.src('./src/assets/img/svg/*.svg')
+=======
+    return gulp.src([
+        'src/assets/img/svg/*.svg',
+        'src/assets/img/skills/*.svg'
+        ])
+>>>>>>> 64563f0b78721cba27654315ec82b207e4e93f8d
 
         .pipe(svgSprite({
             mode: 'symbols',
