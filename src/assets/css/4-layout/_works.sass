@@ -3,9 +3,8 @@
 
 .work-wrap
     position: relative
-    width: 700px
+    width: 300px
     height: 400px
-    width: 780px
     margin: 0 10px
     display: flex
 
@@ -32,12 +31,14 @@
     position: absolute
 
 .nav
+    position: absolute
     z-index: 100
-    right: -40px
-    width: 60px
-    align-self: center
+    top: 50%
+    right: -20px
+    width: 40px
+    // align-self: center
     border: none
-    margin: 0 auto
+    margin: auto 0
     padding: 0
     background-color: $primary-color
     box-shadow: $shadow
@@ -69,12 +70,12 @@
     filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.6))
 
 .desktop
-    max-width: 700px
-    top: -150px
+    max-width: 80vw
+    top: -100px
 
 .mobile
-    max-width: 150px
-    top: 100px
+    max-width: 100px
+    top: 20px
     left: 150px
 
 .seq
