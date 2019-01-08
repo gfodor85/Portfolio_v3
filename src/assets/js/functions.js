@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   // $('.nav-item-wrapper').animate({left: '0px'}, 1000);
   // Vissza kell írni panel-about-ra!
-  $('.panel-work').fadeIn(300, function(){
+  $('.panel-works').fadeIn(300, function(){
     $(this).addClass('active');
   });
 
