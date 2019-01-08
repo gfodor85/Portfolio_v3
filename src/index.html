@@ -31,139 +31,137 @@
 
 </head>
 
-<body id="bg-move">
+<body id="bg-move" class="mark">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="main-container">
-        <!-- HEADER -->
-        <div class="header mark">
+    <!-- HEADER -->
+    <div class="header mark">
 
-            <!-- LOGO -->
-            <div class="logo">
-                <svg>
-                    <use xlink:href="assets/img/svg/symbols.svg#fuseworks_logo_2"></use>
+        <!-- LOGO -->
+        <div class="logo">
+            <svg>
+                <use xlink:href="assets/img/svg/symbols.svg#fuseworks_logo_2"></use>
+            </svg>
+        </div>
+
+        <!-- HEADER TITLE -->
+        <div class="hero_title">
+            <span>FuseWorks</span>
+        </div>
+
+    </div>
+
+
+    <div class="panel-wrapper mark">
+        <!-- ABOUT PANEL -->
+        <div class="content-panel panel-about" id="panel-about">
+            <div id="panel-icon_1" class="panel-icon panel-icon_1 active">
+                <svg class="panel-svg">
+                    <use xlink:href="assets/img/svg/symbols.svg#about_icon"></use>
+                </svg>
+            </div>
+            <p class="about-text">Hello,<br /><br />
+            I’m George, a passionate front-end developer and designer with many years of experience
+            in building and designing clean and fast websites. I am always opened to new ideas
+            and new ways which help me to develop my skills and try to become better and
+            better. In my adventure of development I always learn new methods and technologies
+            which result in cool websites. I have experience in creating a wide range of web
+            projects such as landing pages, eCommerce or WordPress sites that will work and
+            look great across all devices.
+            </p>
+            <div id="title-container_1" class="title-container active">
+                <div class="title-text">About Me</div>
+            </div>
+        </div>
+    
+
+        <!-- WORK PANEL -->
+        <div class="content-panel panel-works" id="panel-works">
+            <div id="panel-icon_2" class="panel-icon panel-icon_2 active">
+                <svg class="panel-svg">
+                    <use xlink:href="assets/img/svg/symbols.svg#work_icon"></use>
+                </svg>
+            </div>
+            <!-- <div class="nav" aria-label="Slider buttons" aria-controls="sequence">
+                <i class="fas fa-chevron-right fa-lg seq-next" aria-label="Next" aria-hidden="true"></i>
+                <i class="fas fa-chevron-left fa-lg seq-prev" aria-label="Previous" aria-hidden="true"></i>
+            </div>
+            <div id="sequence" class="seq">
+                <ul class="seq-canvas">
+                    <li class="slide">
+                        <img class="desktop" src="assets/img/works/azulite_desktop_mockup.png">
+                        <img class="mobile" src="assets/img/works/azulite_mobile_mockup.png">
+                        <p class="work-text-wrap"><b>Azulite</b><br />
+                            A simple and minimal landing page template
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <img class="work-img desktop" src="assets/img/works/verdina_desktop_mockup.png" />
+                        <img class="work-img mobile" src="assets/img/works/verdina_mobile_mockup.png" />
+                        <p class="work-text-wrap"><b>Verdina</b><br />
+                            A simple and minimal landing page template
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <img class="work-img desktop" src="assets/img/works/barbero_desktop_mockup.png" />
+                        <img class="work-img mobile" src="assets/img/works/barbero_mobile_mockup.png" />
+                        <p class="work-text-wrap"><b>Barbero</b><br />
+                            A simple and minimal landing page template
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <img class="work-img desktop" src="assets/img/works/dentico_desktop_mockup.png" />
+                        <img class="work-img mobile" src="assets/img/works/dentico_mobile_mockup.png" />
+                        <p class="work-text-wrap"><b>Dentico</b><br />
+                            A simple and minimal landing page template
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <img class="work-img desktop" src="assets/img/works/yogic_desktop_mockup.png" />
+                        <img class="work-img mobile" src="assets/img/works/yogic_mobile_mockup.png" />
+                        <p class="work-text-wrap"><b>Yogic</b><br />
+                            A simple and minimal landing page template
+                        </p>
+                    </li>
+                </ul>
+            </div> -->
+            <div id="title-container_2" class="title-container active">
+                <div class="title-text">Recent works</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper mark">
+        <div class="nav-item-wrapper nav-item-wrapper-animate">
+            <div panel-icon="panel-icon_1" content-panel="panel-about" title-container="title-container_1" class="nav-item nav-item_1">
+                <svg class="nav-icon">
+                    <use xlink:href="assets/img/svg/symbols.svg#about_icon"></use>
                 </svg>
             </div>
 
-            <!-- HEADER TITLE -->
-            <div class="hero_title">
-                <span>FuseWorks</span>
+            <div panel-icon="panel-icon_2" content-panel="panel-works" title-container="title-container_2" class="nav-item nav-item_2">
+                <svg class="nav-icon">
+                    <use xlink:href="assets/img/svg/symbols.svg#work_icon"></use>
+                </svg>
             </div>
 
-        </div>
-
-
-        <div class="panel-wrapper mark">
-            <!-- ABOUT PANEL -->
-            <div class="content-panel panel-about" id="panel-about">
-                <div id="panel-icon_1" class="panel-icon panel-icon_1 active">
-                    <svg class="panel-svg">
-                        <use xlink:href="assets/img/svg/symbols.svg#about_icon"></use>
-                    </svg>
-                </div>
-                <p class="about-text">Hello,<br /><br />
-                I’m George, a passionate front-end developer and designer with many years of experience
-                in building and designing clean and fast websites. I am always opened to new ideas
-                and new ways which help me to develop my skills and try to become better and
-                better. In my adventure of development I always learn new methods and technologies
-                which result in cool websites. I have experience in creating a wide range of web
-                projects such as landing pages, eCommerce or WordPress sites that will work and
-                look great across all devices.
-                </p>
-                <div id="title-container_1" class="title-container active">
-                    <div class="title-text">About Me</div>
-                </div>
+            <div panel-icon="panel-icon_3" content-panel="panel-skills" title-container="title-container_3" class="nav-item nav-item_3">
+                <svg class="nav-icon">
+                    <use xlink:href="assets/img/svg/symbols.svg#skills_icon"></use>
+                </svg>
             </div>
-        
 
-            <!-- WORK PANEL -->
-            <div class="content-panel panel-works" id="panel-works">
-                <div id="panel-icon_2" class="panel-icon panel-icon_2 active">
-                    <svg class="panel-svg">
-                        <use xlink:href="assets/img/svg/symbols.svg#work_icon"></use>
-                    </svg>
-                </div>
-                <!-- <div class="nav" aria-label="Slider buttons" aria-controls="sequence">
-                    <i class="fas fa-chevron-right fa-lg seq-next" aria-label="Next" aria-hidden="true"></i>
-                    <i class="fas fa-chevron-left fa-lg seq-prev" aria-label="Previous" aria-hidden="true"></i>
-                </div>
-                <div id="sequence" class="seq">
-                    <ul class="seq-canvas">
-                        <li class="slide">
-                            <img class="desktop" src="assets/img/works/azulite_desktop_mockup.png">
-                            <img class="mobile" src="assets/img/works/azulite_mobile_mockup.png">
-                            <p class="work-text-wrap"><b>Azulite</b><br />
-                                A simple and minimal landing page template
-                            </p>
-                        </li>
-                        <li class="slide">
-                            <img class="work-img desktop" src="assets/img/works/verdina_desktop_mockup.png" />
-                            <img class="work-img mobile" src="assets/img/works/verdina_mobile_mockup.png" />
-                            <p class="work-text-wrap"><b>Verdina</b><br />
-                                A simple and minimal landing page template
-                            </p>
-                        </li>
-                        <li class="slide">
-                            <img class="work-img desktop" src="assets/img/works/barbero_desktop_mockup.png" />
-                            <img class="work-img mobile" src="assets/img/works/barbero_mobile_mockup.png" />
-                            <p class="work-text-wrap"><b>Barbero</b><br />
-                                A simple and minimal landing page template
-                            </p>
-                        </li>
-                        <li class="slide">
-                            <img class="work-img desktop" src="assets/img/works/dentico_desktop_mockup.png" />
-                            <img class="work-img mobile" src="assets/img/works/dentico_mobile_mockup.png" />
-                            <p class="work-text-wrap"><b>Dentico</b><br />
-                                A simple and minimal landing page template
-                            </p>
-                        </li>
-                        <li class="slide">
-                            <img class="work-img desktop" src="assets/img/works/yogic_desktop_mockup.png" />
-                            <img class="work-img mobile" src="assets/img/works/yogic_mobile_mockup.png" />
-                            <p class="work-text-wrap"><b>Yogic</b><br />
-                                A simple and minimal landing page template
-                            </p>
-                        </li>
-                    </ul>
-                </div> -->
-                <div id="title-container_2" class="title-container active">
-                    <div class="title-text">Recent works</div>
-                </div>
+            <div panel-icon="panel-icon_4" content-panel="panel-contact" title-container="title-container_4" class="nav-item nav-item_4">
+                <svg class="nav-icon nav-icon-contact">
+                    <use xlink:href="assets/img/svg/symbols.svg#contact_icon"></use>
+                </svg>
             </div>
         </div>
-
-        <!-- NAVIGATION -->
-        <div class="nav-wrapper mark">
-            <div class="nav-item-wrapper nav-item-wrapper-animate">
-                <div panel-icon="panel-icon_1" content-panel="panel-about" title-container="title-container_1" class="nav-item nav-item_1">
-                    <svg class="nav-icon">
-                        <use xlink:href="assets/img/svg/symbols.svg#about_icon"></use>
-                    </svg>
-                </div>
-
-                <div panel-icon="panel-icon_2" content-panel="panel-works" title-container="title-container_2" class="nav-item nav-item_2">
-                    <svg class="nav-icon">
-                        <use xlink:href="assets/img/svg/symbols.svg#work_icon"></use>
-                    </svg>
-                </div>
-
-                <div panel-icon="panel-icon_3" content-panel="panel-skills" title-container="title-container_3" class="nav-item nav-item_3">
-                    <svg class="nav-icon">
-                        <use xlink:href="assets/img/svg/symbols.svg#skills_icon"></use>
-                    </svg>
-                </div>
-
-                <div panel-icon="panel-icon_4" content-panel="panel-contact" title-container="title-container_4" class="nav-item nav-item_4">
-                    <svg class="nav-icon nav-icon-contact">
-                        <use xlink:href="assets/img/svg/symbols.svg#contact_icon"></use>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        
     </div>
+        
    
 
 
