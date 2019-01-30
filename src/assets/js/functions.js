@@ -1,10 +1,11 @@
 $( document ).ready(function() {
-
+  
   // $('.nav-item-wrapper').animate({left: '0px'}, 1000);
   // Vissza kell írni panel-about-ra!
   $('.panel-works').fadeIn(300, function(){
     $(this).addClass('active');
   });
+  
 
   $('.nav-item').on('click', function(){
 
@@ -38,7 +39,7 @@ $( document ).ready(function() {
   });
   
 
-// Sequence JS
+  // Sequence JS
 
   var sequenceElement = document.getElementById("sequence");
 
@@ -50,7 +51,7 @@ $( document ).ready(function() {
   var mySequence = sequence(sequenceElement, options);
  
 
-// Background move on mouse over
+  // Background move on mouse over
   var pixelToMove = 50;
   $("#bg-move").mousemove(function(e) {
   var width = $(this).innerWidth();
@@ -59,5 +60,13 @@ $( document ).ready(function() {
   var newValueY = (e.pageY / height) * pixelToMove;
   $(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
   });
+
+  // User agent
+
+  var b = document.documentElement;
+  b.setAttribute('data-useragent',  navigator.userAgent);
+  b.setAttribute('data-platform', navigator.platform );
+  b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
+
 
 });

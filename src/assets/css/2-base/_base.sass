@@ -19,7 +19,7 @@ body
     display: flex
     justify-content: space-between
     flex-direction: column
-    background-image: url('../../assets/img/background.jpg')
+    // background-image: url('../../assets/img/background.jpg')
     background-position: center
     background-size: 110% 110%
     background-repeat: no-repeat
@@ -65,5 +65,8 @@ body
 //             filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.8))
 //             width: 60px
 //             height: 60px
+
+html[data-useragent*='Android'] body
+  background-color: red !important
 
         
