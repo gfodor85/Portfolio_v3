@@ -19,7 +19,7 @@ body
     display: flex
     justify-content: space-between
     flex-direction: column
-    // background-image: url('../../assets/img/background.jpg')
+    background-image: url('../../assets/img/background.jpg')
     background-position: center
     background-size: 110% 110%
     background-repeat: no-repeat
@@ -67,6 +67,8 @@ body
 //             height: 60px
 
 html[data-useragent*='Android'] body
-  background-color: red !important
+  height: calc(100vh - 56px) !important
+  overflow-x: hidden !important
+  position: relative
 
         

@@ -61,6 +61,7 @@ $( document ).ready(function() {
   $(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
   });
 
+  
   // User agent
 
   var b = document.documentElement;
