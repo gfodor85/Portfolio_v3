@@ -61,7 +61,7 @@ $( document ).ready(function() {
   $(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
   });
 
-  
+
   // User agent
 
   var b = document.documentElement;
@@ -69,5 +69,5 @@ $( document ).ready(function() {
   b.setAttribute('data-platform', navigator.platform );
   b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
 
-
 });
+
