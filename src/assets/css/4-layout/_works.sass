@@ -31,14 +31,14 @@
 .nav-work
     position: absolute
     z-index: 100
-    right: -28px
-    bottom: 30%
+    right: -17px
+    bottom: 12%
     width: 50px
     border: none
     margin: auto 0
     padding: 0
     background-color: $primary-color
-    box-shadow: $shadow
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
 
 .seq-next, .seq-prev
     background: transparent
@@ -152,12 +152,9 @@
     opacity: 0.3
     transition: all .4s
     transition-delay: .2s
+    
 
 @media (max-width: 800px)
-
-    .panel-content
-        min-width: 100% !important
-        height: 50vh
 
     .work-wrap
         position: relative
@@ -168,20 +165,29 @@
         display: flex
     
     .desktop
-        max-width: 420px
-        top: 20px
+        max-width: 145%
+        top: -70px
+        right: -80px
 
     .mobile
-        max-width: 120px
-        top: 60px
-        left: 20px
+        max-width: 20vh
+        top: 70px
+        left: -65px
     
     .work-text-wrap
-        bottom: -130px
-        right: 20px
-        width: 260px
+        bottom: 20px
+        right: 35px
+        width: 220px
         height: 100px
         text-align: right
+    
+    .nav-work
+        right: -17px
+        bottom: 12%
+        width: 50px
+        margin: auto 0
+        padding: 0
+
 
 
     
