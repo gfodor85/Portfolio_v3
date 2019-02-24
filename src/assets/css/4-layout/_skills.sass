@@ -13,7 +13,8 @@
     display: flex
     align-items: center
     position: relative
-    width: 100%
+    width: 110%
+    left: -16px
     
 .skills-chart-icon-wrapper
     position: relative
@@ -25,58 +26,83 @@
     color: $primary-color
     margin: 2px 0
     border: 2px solid white
-    padding: 5px 2px
     z-index: 1000
 
-    &-left
-        left: -18px
-        float: left
+    &_left
+        left: 0
+    
+    &_right
+        right: 18px
+
+.skills-chart-icon
+    position: absolute
+    margin: 0
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    fill: $primary-color
+    width: 50px
+    height: 50px
 
 
 .skills-chart-bar
     position: relative
     display: flex
     align-items: center
-    justify-content: flex-end
+    
     width: 100%
-    height: 25px
-    background-color: $primary-color
+    height: 32px
+    background-color: $accent-color
+    border: 2px solid $primary-color
     color: $primary-color
     box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
 
     &_left
         left: -18px
-        float: right
+        justify-content: flex-end
 
     &_right
-        float: left
-        width: 150px
+        right: 0
+        justify-content: flex-start
 
+.skills-chart-loader
+    position: absolute
+    align-items: center
+    height: 30px
+    background-color: $primary-color
 
-.skills-chart-text_left
-    font-weight: bold
-    color: $accent-color
-    text-align: right
+.left
+    left: 0
 
-.skills-chart-icon-wrapper_right
-    position: relative
-    right: -40px
-    width: 60px
-    height: 60px
-    display: block
-    float: right
-    background-color: $button-bg
-    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
-    color: $primary-color
-    margin: 2px 0
-    border: 2px solid white
-    padding: 5px 2px
-    z-index: 1000
+.right
+    right: 0
 
+.html
+    width: 90%
 
-.skills-chart-text_right
+.css
+    width: 90%
+
+.chart-text_left
     font-weight: bold
     color: $accent-color
     text-align: left
+    padding-left: 30px
+
+.chart-text_right
+    font-weight: bold
+    color: $accent-color
+    text-align: right
+    padding-right: 30px
+
+.chart-percent_left
+    font-weight: bold
+    color: $primary-color
+    padding-right: 10px
+
+.chart-percent_right
+    font-weight: bold
+    color: $primary-color
+    padding-left: 10px
 
 
