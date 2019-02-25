@@ -2,6 +2,8 @@
     position: absolute
     top: 70px
     width: 100%
+    display: flex
+    flex-direction: column
 
 .skills_logo
     width: 90%
@@ -32,7 +34,7 @@
         left: 0
     
     &_right
-        right: 18px
+        right: 0
 
 .skills-chart-icon
     position: absolute
@@ -49,7 +51,6 @@
     position: relative
     display: flex
     align-items: center
-    
     width: 100%
     height: 32px
     background-color: $accent-color
@@ -58,18 +59,16 @@
     box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.6)
 
     &_left
-        left: -18px
         justify-content: flex-end
 
     &_right
-        right: 0
         justify-content: flex-start
 
 .skills-chart-loader
     position: absolute
-    align-items: center
     height: 30px
     background-color: $primary-color
+    line-height: 1.7
 
 .left
     left: 0
@@ -78,10 +77,10 @@
     right: 0
 
 .html
-    width: 90%
+    width: 80%
 
 .css
-    width: 90%
+    width: 80%
 
 .chart-text_left
     font-weight: bold
