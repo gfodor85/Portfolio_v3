@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   
   // Visszaírni panel-about-ra!
-  $('.panel-skills').fadeIn(300, function(){
+  $('.panel-works').fadeIn(300, function(){
     $(this).addClass('active');
   });
   
