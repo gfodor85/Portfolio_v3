@@ -74,11 +74,11 @@ gulp.task('sprites', function () {
 gulp.task('clean:dist', function () {
     return gulp.src([
         './dist/index.html',
-        './dist/contact.php',
         './dist/assets/css/main.css',
         './dist/assets/fonts/font-awesome.min.css',
         './dist/assets/img/*.{png,jpg}',
         './dist/assets/img/svg/symbols.svg',
+        './dist/assets/img/works/symbols.svg',
         './dist/assets/js/**/*.js',
         './dist/assets/php/**/*.*',
         './dist/**/*.json',
