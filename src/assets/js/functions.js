@@ -1,7 +1,6 @@
 $( document ).ready(function() {
   
-  // Visszaírni panel-about-ra!
-  $('.panel-works').fadeIn(300, function(){
+  $('.panel-about').fadeIn(300, function(){
     $(this).addClass('active');
   });
   
