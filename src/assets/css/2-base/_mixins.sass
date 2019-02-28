@@ -8,3 +8,17 @@
 @mixin bg_section
     width: 100%
     height: 100%
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, transparent, 50%)) 
+  ::-webkit-scrollbar 
+      width:  $size
+      height: $size
+  
+
+  ::-webkit-scrollbar-thumb 
+      background: $foreground-color
+  
+
+  ::-webkit-scrollbar-track 
+      background: $background-color
+  
