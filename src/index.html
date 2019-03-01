@@ -97,39 +97,49 @@
             <div id="sequence" class="seq">
                 <ul class="seq-canvas">
                     <li class="slide">
-                        <img class="desktop" src="assets/img/works/azulite_desktop_mockup.png">
-                        <img class="mobile" src="assets/img/works/azulite_mobile_mockup.png">
-                        <div class="work-text-wrap"><b>Azulite</b><br />
-                           <p>A simple and minimal landing page template</p>
-                        </div>
+                        <a href="https://dentico-dist.herokuapp.com/" target="_blank">
+                            <img class="work-img desktop" src="assets/img/works/dentico_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/dentico_mobile_mockup.png" />
+                            <div class="work-text-wrap"><b>Dentico</b><br />
+                                <p>A simple and minimal landing page template</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="slide">
-                        <img class="work-img desktop" src="assets/img/works/verdina_desktop_mockup.png" />
-                        <img class="work-img mobile" src="assets/img/works/verdina_mobile_mockup.png" />
-                        <div class="work-text-wrap"><b>Verdina</b><br />
+                        <a href="https://gfodor85.github.io/Azulite/" target="_blank">                         
+                            <img class="desktop" src="assets/img/works/azulite_desktop_mockup.png">
+                            <img class="mobile" src="assets/img/works/azulite_mobile_mockup.png">
+                            <div class="work-text-wrap"><b>Azulite</b><br />
                             <p>A simple and minimal landing page template</p>
-                        </div>
+                            </div>
                     </li>
                     <li class="slide">
-                        <img class="work-img desktop" src="assets/img/works/barbero_desktop_mockup.png" />
-                        <img class="work-img mobile" src="assets/img/works/barbero_mobile_mockup.png" />
-                        <div class="work-text-wrap"><b>Barbero</b><br />
-                            <p>A simple and minimal landing page template</p>
-                        </div>
+                        <a href="https://gfodor85.github.io/verdina/" target="_blank">
+                            <img class="work-img desktop" src="assets/img/works/verdina_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/verdina_mobile_mockup.png" />
+                            <div class="work-text-wrap"><b>Verdina</b><br />
+                                <p>A simple and minimal landing page template</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="slide">
-                        <img class="work-img desktop" src="assets/img/works/dentico_desktop_mockup.png" />
-                        <img class="work-img mobile" src="assets/img/works/dentico_mobile_mockup.png" />
-                        <div class="work-text-wrap"><b>Dentico</b><br />
-                            <p>A simple and minimal landing page template</p>
-                        </div>
+                        <a href="http://fuseworks.io/subdomains/barbero" target="_blank">
+                            <img class="work-img desktop" src="assets/img/works/barbero_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/barbero_mobile_mockup.png" />
+                            <div class="work-text-wrap"><b>Barbero</b><br />
+                                <p>A simple and minimal landing page template</p>
+                            </div>
+                        </a>
                     </li>
+                    
                     <li class="slide">
-                        <img class="work-img desktop" src="assets/img/works/yogic_desktop_mockup.png" />
-                        <img class="work-img mobile" src="assets/img/works/yogic_mobile_mockup.png" />
-                        <div class="work-text-wrap"><b>Yogic</b><br />
-                            <p>A simple and minimal landing page template</p>
-                        </div>
+                        <a href="http://fuseworks.io/subdomains/yogic" target="_blank">
+                            <img class="work-img desktop" src="assets/img/works/yogic_desktop_mockup.png" />
+                            <img class="work-img mobile" src="assets/img/works/yogic_mobile_mockup.png" />
+                            <div class="work-text-wrap"><b>Yogic</b><br />
+                                <p>A simple and minimal landing page template</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
