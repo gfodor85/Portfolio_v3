@@ -35,20 +35,33 @@ gulp.task('php', function() {
 });
 
 
-gulp.task('browsersync',['php'], function() {
+// gulp.task('browsersync',['php'], function() {
+//     browsersync.init({
+//         proxy: '127.0.0.1:8010',
+//         port: 8080,
+//         injectChanges: false,
+//         open: true,
+//         notify: true
+//     });
+
+//     gulp.watch('src/index.php').on('change', browsersync.reload);
+//     gulp.watch('src/assets/css/**/*.sass', ['styles']);
+//     gulp.watch('src/index.html').on('change', browsersync.reload);
+//     gulp.watch('src/**/*.php').on('change', browsersync.reload);
+//     gulp.watch('src/assets/js/**/*.js').on('change', browsersync.reload);
+// });
+
+gulp.task('browsersync', function () {
     browsersync.init({
-        proxy: '127.0.0.1:8010',
-        port: 8080,
-        injectChanges: false,
-        open: true,
-        notify: true   
+        injectChanges: true,
+        server: {
+            baseDir: './src'
+        }
     });
 
-    gulp.watch('src/index.php').on('change', browsersync.reload);
     gulp.watch('src/assets/css/**/*.sass', ['styles']);
     gulp.watch('src/index.html').on('change', browsersync.reload);
-    gulp.watch('src/**/*.php').on('change', browsersync.reload);
-    gulp.watch('src/assets/js/**/*.js').on('change', browsersync.reload);
+    gulp.watch('src/js/**/*.js').on('change', browsersync.reload);
 });
 
 
