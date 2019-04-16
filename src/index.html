@@ -156,12 +156,12 @@
                 </svg>
             </div>
 
-            <div class="nav-skills" aria-label="Slider buttons">
+            <!-- <div class="nav-skills" aria-label="Slider buttons">
                 <i class="fas fa-chevron-down fa-lg skills-down" aria-label="Scroll Down" aria-hidden="true"></i>
                 <i class="fas fa-chevron-up fa-lg skills-up" aria-label="Scroll Up" aria-hidden="true"></i>
-            </div>
+            </div> -->
 
-            <div class="skills-wrapper">
+            <div>
 
                 <div class="skills-chart-container">
 

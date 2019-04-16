@@ -1,12 +1,3 @@
-.skills-wrapper
-    position: relative
-    border: 2px solid white
-    width: 110%
-    height: 85%
-    overflow-x: hidden
-    top: 42px
-
-
 .skills-chart-container
     position: absolute
     top: 70px
@@ -14,6 +5,7 @@
     display: flex
     flex-direction: column
     align-items: center
+    
 
 .skills_logo
     width: 90%
@@ -154,5 +146,13 @@
 
 .skills-down:hover-skills, .skills-up:hover-skills
     opacity: 1
+
+
+@media (max-height: 800px)
+
+    .skills-chart-container
+        transform: scale(0.8)
+        top: 0px
+
 
 

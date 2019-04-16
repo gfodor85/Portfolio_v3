@@ -36,11 +36,7 @@ $( document ).ready(function() {
     });
   });
 
-  // $('.nav-item').hover(function(){
-  //   $('.nav-icon').fadeOut();
-  // });
   
-
   // Sequence JS
 
   var sequenceElement = document.getElementById("sequence");
